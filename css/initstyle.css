@@ -1,0 +1,30 @@
+﻿.txtNormal input{background:url(../images/inputbox_bg.gif) no-repeat left top;border:1px solid #a7a6aa;width:140px;}
+.txtNormal .divLabel{width:100px;text-align:right;font-size:12px;line-height:20px;float:left;}
+.required{color:Red;}
+.pagerStyle{font-size:14px;}
+.pagerStyle a{text-decoration:none;}
+.message{height:auto;border:3px solid #CCCCCC;padding:10px;}
+.message_margy{width:100%;height:auto;font-size:16px;text-align:left;}
+.message_marge{width:100%;height:auto;text-align:left;font-size:12px;line-height:34px;}
+.message_marge ul li{list-style-type:none;margin-right:30px;}
+.message_margs{border:1px solid #FB9250;background:#FFFCE9;text-align:left;font-size:12px;padding-top:10px;padding-bottom:10px;padding-left:10px;}
+.message_margw{width:100%;height:auto;font-size:12px;margin-top:8px;line-height:30px;}
+.message_margw ul li{list-style-type:none;margin-right:30px;}
+.message_margw ul li a{color:#005FA3;}
+.pagerStyle *{vertical-align:middle;}
+/* MessagePanel */
+div.MessagePanel{color:#880000;background:#d4ffc0;border:1px dashed #CCCCCC;padding:12px;font-weight:bold;width:90%;margin-top:5px;margin-left:5px;margin-bottom:5px;padding:5px;display:table;}
+div.ErrorPanel{color:#660033;background:#FFFFCC;border:1px dashed #DBDB64;padding:12px;font-weight:bold;width:90%;margin-top:5px;margin-left:5px;margin-bottom:5px;padding:5px;}
+div.ErrorPanel IMG,div.MessagePanel IMG{float:left;}
+div.ErrorPanel DIV,div.MessagePanel DIV{margin-bottom:0px;margin-left:0px;}
+div.ErrorPanel table,div.MessagePanel table{border:0;padding:0;margin:0;background-color:Transparent;}
+div.ErrorPanel td,div.MessagePanel td{border:0;padding:0;margin:0;background-color:Transparent;font-size:14px;font-weight:bold;}
+/* 分页控件样式 */
+.pagerStyle{font-size:12px;float:left;margin-top:10px;}
+.pagerStyle a{}
+.pagerStyle .pageGoto{color:#999999;float:left;margin-right:5px;padding:0 0.5em;height:20px;}
+.pagerStyle a,.pagerStyle input{background-color:#FFFFFF;border:1px solid #CCCCCC;float:left;height:20px;line-height:20px;margin-right:5px;padding:0 0.5em;text-decoration:none;}
+.pageSpan{float:left;height:20px;line-height:20px;color:#999999;}
+.pageBreak{float:left;margin-right:5px;padding:0 0.5em;}
+.disable{color:#C4C4C4;}
+.pageCur{float:left;height:20px;line-height:20px;margin:0 3px 0 0;overflow:hidden;padding:0 5px;text-align:center;vertical-align:middle;white-space:nowrap;background-color:#FFFFFF;border-color:#FFFFFF;color:#FF6600;cursor:default;font-weight:700;}

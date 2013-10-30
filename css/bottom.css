@@ -1,0 +1,16 @@
+@charset "utf-8";.bottom{clear:both;}
+.bot1{height:185px;padding-left:100px;}
+.bot1 ul{margin-top:5px;margin-left:40px;}
+.bot1 ul li{color:#fff;line-height:20px;}
+.bot1 ul li a{color:#fff;}
+.bot1 .block{float:left;border-right:2px #353535 solid;}
+.bot1 .block .title{font-family:"微软雅黑","楷体","黑体";font-size:18px;color:#d3d3d3;background:url(../images/bottom/bottom.png) no-repeat 10px 0;padding-left:40px;color:#fff;}
+.bot1 .weiz{padding-left:20px;padding-top:10px;margin-right:75px;}
+.bot1 .fo1{width:255px;margin-top:20px}
+.bot1 .fo2{width:255px;margin-top:20px}
+.bot1 .fo3{width:255px;margin-top:20px}
+.bot1 .fo4{margin-top:20px;width:255px;}
+.bot2{height:39px;text-align:center;line-height:39px;color:#fff;font-size:18px;padding-left:100px;font-family:"微软雅黑","楷体","黑体";font-weight:bold;}
+.bot2 a{color:#fff;margin-right:200px;}
+.bot3{text-align:center;height:35px;margin:0 auto;font-size:14px;width:800px;color:#666;line-height:20px;padding-top:20px;}
+.bot4{text-align:center;height:100px;}

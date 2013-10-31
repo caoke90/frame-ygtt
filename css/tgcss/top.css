@@ -1,0 +1,23 @@
+@charset "utf-8";.top{background:url(../../images/tgimg/oy1.jpg) repeat-x;height:142px;}
+.top1{height:104px;margin:0;}
+.top1 .logo{
+	background:url(../../images/tgimg/logo.png);
+	width:282px;
+	height:83px;
+	text-indent:-100px;
+	overflow:hidden;
+	float:left;
+	position:relative;
+	left:10px;
+	top:10px;
+}
+.top1 .logo a{display:block;width:190px;height:68px;}
+.top1 .title{width:77px;height:22px;background:url(../../images/tgimg/oy2.jpg);text-align:center;padding:0;color:#FFF;line-height:22px;float:left;position:relative;top:60px;left:30px;}
+.top1 .module{float:right;position:relative;top:60px;}
+.top1 .module ul li{float:left;font-size:14px;}
+.top1 .module ul li span{color:#b01010;}
+.top1 .module ul li span.blue{color:#005ea7;}
+.top2{}
+.top2 ul{height:40px;background:url(../../images/tgimg/oy1.png) no-repeat;margin-left:20px;}
+.top2 li{background:url(../../images/tgimg/oy1.png) no-repeat right;padding:0 18px;float:left;height:40px;line-height:40px;color:#FFF;}
+.top2 li a{color:#FFF;font-weight:bold;}

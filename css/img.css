@@ -1,7 +1,0 @@
-.module li .img{text-align:center;padding-bottom:5px;padding-top:5px;position:relative;}
-.module li .img q{position:absolute;top:-7px;right:-19px;width:50px;height:50px;z-index:2;}
-.module li .img q.xp{background:url(../images/ejfl/ejfl.png) -0px -200px;}
-.module li .img q.mqjb{background:url(../images/ejfl/ejfl.png) -50px -200px;}
-.module li .img q.zj{background:url(../images/ejfl/ejfl.png) -100px -200px;}
-.module li .img q.rm{background:url(../images/ejfl/ejfl.png) -150px -200px;}
-.module li .img q.xszk{background:url(../images/ejfl/ejfl.png) -200px -200px;}

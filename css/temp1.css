@@ -1,7 +1,0 @@
-#temp1{ height:280px; width:560px;}
-#temp1 .JQ-content-box{overflow:hidden;width:560px;height:280px;position:relative;z-index: 1;}
-#temp1 .JQ-slide-content{ position:absolute}
-#temp1 .JQ-slide-content li{ float:left;overflow:hidden; }
-#temp1 .JQ-slide-nav { position:absolute;right:10px; bottom:10px; height:18px; padding-top:2px; }
-#temp1 .JQ-slide-nav li {background-color:#fcf2cf;border:1px solid #FF6699;color:#D94B01;cursor:pointer;float:left;font-size:12px;height:16px;line-height:16px;margin-left:3px;text-align:center;width:16px;}
-#temp1 .JQ-slide-nav li.on { width:16px;height:16px;background: #ff9415;color: #FFFFFF;font-weight: bold;border: 2px solid #f47500;}

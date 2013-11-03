@@ -1,3 +1,4 @@
+define(function(require,exports,module){
 $("div[jsui=timo]").each(function(){
 	var the=this;
 	$(".title li",the).each(function(i){
@@ -8,5 +9,10 @@ $("div[jsui=timo]").each(function(){
 			$(".module ul",the).eq(i).show();
 		})
 	})
-	$(".title li",the).eq(0).trigger("mouseover");
+	if($(".title li.on",the).length==0){
+			$(".title li",the).eq(0).trigger("mouseover");
+		}else{
+			$(".title li.on",the).trigger("mouseover")
+			}
+})
 })

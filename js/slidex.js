@@ -27,5 +27,5 @@ define(function(require,exports,module){
             timer : 3000
         });
     });
-	console.log(21)
+	
 })

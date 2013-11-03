@@ -3,6 +3,7 @@ seajs.config({
     alias: {
         "slidex": "slidex.js",
         "slidex3":"slidex.js",
+	
         "slidef":"slidex.js"
     }
 })

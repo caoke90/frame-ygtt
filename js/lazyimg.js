@@ -36,7 +36,7 @@ $(".btn b").each(function (i) {
     if (arr.length > 1) {
         sux = arr[1];
     }
-    $(this).html(arr[0] + ".<font style='font-size:11px;'>" + sux + "</font>")
+    $(this).html(arr[0] + ".<font style='font-size:12px;'>" + sux + "</font>")
 })
 
 $(".price b").each(function (i) {
@@ -48,6 +48,6 @@ $(".price b").each(function (i) {
         sux = arr[1];
     }
     $(this).html(arr[0] + ".<font style='font-size:12px;'>" + sux + "</font>")
-})//图片延迟加载效果
+})
 
 })

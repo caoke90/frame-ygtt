@@ -1,7 +1,7 @@
 @import "base.css";@import "top.css";@import "bottom.css";.con{
 	margin:0 auto;
 }
-body{background:#f7f7f9;}
+body{}
 .block{border:0;}
 .main{
 	padding-bottom:10px;

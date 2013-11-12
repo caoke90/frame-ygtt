@@ -5,7 +5,7 @@ body{}
 .block{border:0;}
 .main{
 	padding-bottom:10px;
-	margin-top: -1px;
+	margin-top: 0px;
 	background:url(../images/index/bg.png) repeat-x;
 }
 .txt{color:#404040;}
@@ -14,9 +14,10 @@ body{}
 	float:left;
 	height:510px;
 	z-index:-1;
-	position:relative;
 	width:230px;
 	visibility:hidden;
+	position: relative;
+	display: block;
 }
 .blo2{
 	width:670px;

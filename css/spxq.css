@@ -1,4 +1,4 @@
-@import "base.css";@import "top.css";@import "bottom.css";.con{
+@import "base.css";@import "top.css";@import "bottom.css";@import "jqzoom.css";.con{
 	margin:0 auto;
 }
 body{}
@@ -32,7 +32,11 @@ body{}
 	height: 483px;
 	overflow: hidden;
 }
-.blo1 .imglist ul{}
+.blo1 .imglist ul{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
 
 .blo1 .imglist ul li{
 	width:115px;
@@ -149,7 +153,17 @@ body{}
 	height: 40px;
 	margin-top: 30px;
 }
-
+.blo2 .p5{
+	position:absolute;
+	height:29px;
+	left:186px;
+	width:297px;
+	top:454px;
+	text-indent:5px;
+}
+.blo2 .p5 label{float:left;}
+.blo2 .p5 .bshare-custom{float:left;width:230px;}
+.blo2 .p5 .bshare-custom a{margin-bottom:5px;margin-left:3px;}
 .left{ width:245px; float:left;}
 .blo3{
 	float:left;
@@ -187,6 +201,7 @@ body{}
 .blo4 .title{ border-bottom:1px #ddd solid;}
 .blo4 .module{
 	padding-bottom:8px;
+	position: relative;
 }
 .blo4 .module ul{
 position:relative;
@@ -209,9 +224,8 @@ position:relative;
 .blo5{
 	border:1px solid #ddd;
 	float:left;
-	width:100%;
-	overflow:hidden;
-	position:relative;
+	position: relative;
+	width: 245px;
 }
 .blo5 .title{
 		border-bottom:1px solid #ddd;
@@ -228,16 +242,12 @@ position:relative;
 
 }
 .blo5 .module li{
-
-	float:left;
 	width: 245px;
-
-	overflow: hidden;
-	margin-right: 20px;
-		border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	float: left;
 }
 .blo5 .module li div{
-	width:220px;
+	width:180px;
 	margin:0 auto;
 
 }
@@ -247,7 +257,6 @@ position:relative;
 	position:relative;
 }
 .blo5 .module li .txt{
-	position:relative;
 	line-height:22px;
 	height:48px;
 	font-size:14px;
@@ -271,144 +280,349 @@ position:relative;
 
 .blo6{
 	float:left;
-	width:245px;
 	border: 1px solid #ddd;
+	position: relative;
+	width: 245px;
 }
-.blo6 .title{ border-bottom:1px solid #ddd;}
+.blo6 .title2{ border-bottom:1px solid #ddd;padding:0 10px;height:32px;font-size:14px;font-weight:700;line-height:32px;overflow:hidden;}
+.blo6 .title{
+	width:240px;
+	padding:0;
+height:32px;font-size:14px;font-weight:700;line-height:32px;overflow:hidden;
+	height: 40px;
+}
+.blo6 .title ul{
+	position: relative;	border-bottom:2px solid #b00000;
+	height:31px;
+		padding-left:10px;
+
+}
+.blo6 .title li{
+	float:left;
+	margin-right:10px;
+			top: 7px;
+	width:57px;
+	height:31px;
+	font-size: 16px;
+	font-weight:bold;
+	text-align: center;
+	line-height: 28px;
+	position: relative;
+}
+.blo6 .title li.on{
+	background:url(../images/xxy/xxy.png) -10px -100px;
+	color: #fff;
+	position: relative;
+}
 .blo6 .module{
 	padding: 0;
+	overflow: hidden;
 
 }
 .blo6 .module ul{
-	width:1170px;
-	padding-left:2px;
+	margin-bottom: -2px;
+	
+
 }
 .blo6 .module li{
-	float:left;
+	height:100px;
 	position:relative;
-	margin-right:7px;
+	width: 230px;
+	margin: 0 auto;
+	border-bottom:1px solid #ddd;
 }
 .blo6 .module li div{margin-left:1px;margin-right:1px;}
 .blo6 .module li b{color:#F00;font-weight:normal;}
-.blo6 .module li .price{margin-top:5px;padding-left:10px;height:30px;}
-.blo6 .module li .price span{margin-left:3px;font-size:18px;font-family:"Microsoft Yahei Font ";color:#F00;}
+.blo6 .module li .price{
+	height:30px;
+	position: absolute;
+	width: 140px;
+	top: 55px;
+	right: 0px;
+}
+.blo6 .module li .price span.a{
+	font-size:14px;
+	font-family:"Microsoft Yahei Font ";
+	color:#b00000;
+	font-weight: bold;
+}
+.blo6 .module li .price span.b{
+	margin-right:6px;
+	font-size:14px;
+	font-family:"Microsoft Yahei Font";
+	text-decoration: line-through;
+}
 .blo6 .module li .txt{
-	padding-left:10px;
-	overflow:hidden;
-	text-align: center;
+	float:left;
+	width:140px;
+	font-weight:bold;
+	font-family:"微软雅黑";
+	font-size: 14px;
+	position: absolute;
+	top: 8px;
+	right: 0px;
+	height: 40px;
+	overflow: hidden;
 }
 .blo6 .module li .img{
 	text-align:center;
-	position:relative;
+	position:absolute;
 	padding:0;
+	width:80px;
+	height:80px;
+	float:left;
 	border: 1px solid #ddd;
+	top: 8px;
 }
-
+.right{
+	width:875px;
+	float:left;
+	position: relative;
+	left: 15px;
+}
 /*blo7*/
 .blo7{
 	float:left;
-	width:100%;
-	height:530px;
-	overflow:hidden;
+	width:875px;
 	position:relative;
+	border:1px solid #ddd;
+	height: 310px;
+	overflow: hidden;
 }
-.blo7 .title{
-	border-left:4px #b00000 solid;
-	border-bottom:2px solid #b00000;
-	height:40px;
+.blo7 .title2{ height:38px;border-bottom:1px solid #ddd; margin-bottom:10px;}
+.blo7 .title2 ul{
+	position:relative;
 	overflow:hidden;
+	height:38px;
+	top:1px;
+	left: -1px;
+}
+.blo7 .title2 li{ width:136px; height:38px; line-height:38px; float:left; text-align:center; font-weight:bold; font-family:"微软雅黑"; color:#404040; font-size:16px;}
+.blo7 .title2 li.on{ border-top:3px solid #b00000; border-left:1px solid #ddd;  border-right:1px solid #ddd;border-bottom:0; height:40px; background:#fff; }
+.blo7 .title{
+border-bottom:1px solid #ddd;
+	height:31px;
+	overflow:visible;
 	padding-left:0px;
 }
-.blo7 .titletext{
-	font-size:24px;
-	font-family: "微软雅黑";
-	text-indent: 15px;
-	line-height: 40px;
-}
-.blo7 .titlemore ul{position:relative;top:0px;}
-.blo7 .titlemore li{
-	width:auto;
-	text-align:center;
+.blo7 .title ul{
 	position:relative;
-	z-index:1;
-	font-size:14px;
-	font-weight:normal;
-	font-family:"微软雅黑";
-	line-height: 50px;
-	padding: 0 5px;
-	float: left;
-}
-.blo7 .titlemore li q{position:absolute;right:0;color:#ddd;font-size:20px;top:0;display:none;}
-.blo7 .titlemore li b{float:left;}
-.blo7 .titlemore li.on{background:#690000;border:0;position:relative;z-index:30;font-weight:bold;}
-.blo7 .titlemore li.on q{display:none;}
-.blo7 .module{
-	padding:0;
 	overflow:hidden;
-	width:775px;
+	height:31px;
+	top:1px;
+	left: -1px;
+}
+.blo7 .title li{ width:103px; height:31px; line-height:31px; float:left; text-align:center; font-weight:bold;color:#404040; font-size:14x;}
+.blo7 .title li.on{ border-top:1px solid #ddd; border-left:1px solid #ddd;  border-right:1px solid #ddd;border-bottom:0; height:40px; background:#fff; }
+
+.blo7 .module{
 	padding-left:20px;
 	float: left;
 }
-.blo7 .module ul{width:785px;}
+.blo7 .module ul{
+	width: 100%;
+}
 .blo7 .module li{
-	width:190px;
+	width:150px;
 	float:left;
 	padding-top: 5px;
 }
+.blo7 .module li.add{ position:relative; width:40px;}
+.blo7 .module li.add img{ position:absolute; top:80px;}
 .blo7 .module li div{
-	width:160px;
+	width:120px;
 	margin:0 auto;
 }
 .blo7 .module li .img{text-align:center;padding-bottom:5px;padding-top:10px;position:relative;}
-.blo7 .module li .txt{overflow:hidden;line-height:18px;height:40px;}
-.blo7 .module li .txt a{color:#666;}
-.blo7 .module li .btn{height:18px;color:#999;text-indent:-47px;overflow:hidden;}
-.blo7 .module li .btn b{
-	color:#F00;
-	font-size: 16px;
+.blo7 .module li .txt{
+	font-size:12px;
+	color:#404040;
+	font-weight:bold;
+	overflow:hidden;
+	line-height:22px;
+	height:44px;
+	margin:3px auto;
+}
+.blo7 .module li .txt a{color:#404040;}
+.blo7 .module li .price{ font-size:14px;}
+.blo7 .module li .price span{
+	color:#b00000;
 	font-weight: bold;
 }
-.blo7 .image{
-	float: left;
-	padding-top: 15px;
+.blo7 .module li.all{
+	float:left;
+	width:200px;
+	border-left: 1px dashed #ddd;
+	height: 200px;
+}
+.blo7 .module li.all div{ width:180px;}
+.blo7 .module li.all .h2{ height:22px; font-size:14px; font-weight:bold;}
+.blo7 .module li.all .price1{ line-height:25px; font-size:14px;font-weight:bold;}
+.blo7 .module li.all .price2{line-height:25px; font-size:14px; font-weight:bold;}
+.blo7 .module li.all .price2 span{ color:#666;}
+.blo7 .module li.all .btn{}
+.blo7 .module li.all .btn input{
+	background:url(../images/xxy/p5.png) no-repeat;
+	width:114px;
+	height:28px;
+	border: 0;
+	cursor: pointer;
 }
 .blo8{
-	float:left;
-	width:100%;
+	width:875px;
 	border:1px solid #ddd;
 	position:relative;
+	float: left;
+}
+.blo8 .title{  height:35px; line-height:35px;  padding:0;border-bottom:1px solid #ddd; overflow:visible;}
+.blo8 .title ul{
+	position:relative;
 	overflow:hidden;
+	height:35px;
+	top:1px;
+	left: -1px;
 }
-.blo8 .title{ border-bottom:1px solid #ddd; height:45px; line-height:45px;background:url(../images/index/index2.png) 0 -3px; font-size:20px;}
-.blo8 .titletext{ color:#b00000; line-height:40px; font-size:16px; font-family:"微软雅黑";}
+.blo8 .title li{ float:left; width:116px; height:35px; font-size:16px; text-align:center;}
+.blo8 .title li.on{ border-bottom:0; border-left:1px solid #ddd; border-right:1px solid #ddd; border-top:3px solid #b00000; background:#f3f3ee; height:35px;}
 .blo8 .module{
-	padding-left: 30px;
+	padding-left: 15px;
 }
-.blo8 .module ul{ }
-.blo8 .module li{
-	width:220px;
+.blo8 .module .ajax{}
+.blo9{
+	width:860px;
+	position:relative;
+	overflow:hidden;
+	float: left;
+}
+.blo9 .title{  height:35px; line-height:35px; color:#fff; background:#b00000; font-size:16px;border-bottom:1px solid #ddd; overflow:visible;}
+.blo9 .module{border:1px solid #dddddd;height:100px;}
+.blo9 .module .e1{width:130px;line-height:20px;padding:25px 10px 0 10px;position:relative;float:left;margin-right:60px;}
+.blo9 .module .e1 span{float:left;}
+.blo9 .module .e1 img{clip:rect(auto 10px auto auto);position:absolute;}
+.blo9 .module .e1 .img{background:url(../images/xx0.jpg);width:66px;height:14px;display:inline-block;margin-left:3px;margin-right:3px;}
+.blo9 .module .e2{background:url(../images/xxy/xxy.png) -0px -480px no-repeat;width:440px;height:93px;position:relative;float:left;margin-right:50px;}
+.blo9 .module .e2 span{position:absolute;left:375px;top:7px;background:url(../images/xxy/xxy.png) -300px -600px;height:22px;width:29px;text-align:center;line-height:16px;color:#FFFFFF;}
+.blo9 .module .e3{width:110px;float:left;padding-left:40px;padding-top:10px;}
+.blo9 .module .e3 .n1{
+	width:105px;
+	height:30px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+.blo9 .module .e3 .n2{
+	width:105px;
+	height:31px;
+	color:#8e5e04;
+	font-size:14px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+/*.blo10*/
+.blo10{
+	float: left;
+	width: 875px;
+}
+.blo10 .title{border-bottom:2px solid #990103;height:30px;padding:0;}
+.blo10 .title li{float:left;text-align:center;line-height:30px;margin-right:4px;width:106px;height:30px;font-size:14px;font-weight:bold;cursor:pointer;}
+.blo10 .title li.on{width:134px;height:30px; background:#b00000; color:#fff;}
+.blo10 .module ul li{ float:left;}
+.elo1{
 	float:left;
-	height: 280px;
+	width:100px;
+	margin-right:20px;
+}
+.elo1 p{text-align:center;line-height:20px;color:#333333;}
+.elo1 span{text-align:center;line-height:16px;color:#999999;}
+.elo1 img{border:1px solid #dddddd;margin-bottom:5px;}
+.elo2{
+	float:left;
+	width:740px;
+	border:1px solid #f3e6c6;
+	background:#fffcf5;
+	margin-bottom:10px;
+}
+.elo2 .title{border-bottom:1px dashed #f3e6c6;padding-bottom:10px;padding-top:10px;margin-left:20px;line-height:30px;margin-right:15px;}
+.elo2 .titletext img{margin-left:10px;margin-top:3px;}
+.elo2 .titlemore{font-weight:normal;color:#999999;}
+.elo2 .module{margin-left:40px;margin-right:15px;}
+.elo2 .module label{color:#ff6600;}
+.elo2 .module p{line-height:22px;}
+.elo2 .btn{margin-left:30px;height:30px;margin-right:15px;}
+.elo2 .btn label{color:#999;float:left;}
+.elo2 .btn input{color:#005aa0;cursor:pointer;}
+.elo2 .btn .yy{
+	width:76px;
+	height:23px;
+	float:left;
+	margin-right:10px;
+}
+.elo2 .btn .my{
+	width:76px;
+	height:23px;
+	float:left;
+}
+.elo2 .btn .hf{background:url(../images/xxy/xxy.png) -100px -640px;width:60px;height:23px;float:right;}
+
+.blo11{
+	border:1px solid #ddd;
+	float:left;
+	position: relative;
+	width: 875px;
+}
+.blo11 .title{
+	border-bottom:1px solid #ddd;
+	height:35px;
+	text-indent:10px;
+	padding-left:0px;
+	background: #b00000;
+	color: #fff;
+	font-size: 18px;
+}
+.blo11 .module{
+	padding:0;
+	padding-top:8px;
+}
+.blo11 .module ul{
+	width: 875px;
 
 }
-.blo8 .module li div{
-	width:200px;
+.blo11 .module li{
+	width: 215px;
+	border-bottom: 1px solid #ddd;
+	float: left;
+}
+.blo11 .module li div{
+	width:180px;
 	margin:0 auto;
+
 }
-.blo8 .module li .img{text-align:center;padding-bottom:5px;padding-top:10px;position:relative;}
-.blo8 .module li .txt{overflow:hidden;line-height:18px;height:40px;}
-.blo8 .module li .txt a{
-	color:#404040;
+.blo11 .module li .img{
+	text-align:center;
+	padding-top:10px;
+	position:relative;
 }
-.blo8 .module li .btn{height:18px;color:#999;text-indent:-47px;overflow:hidden;}
-.blo8 .module li .btn b{
-	color:#F00;
-	font-size: 16px;
-	font-weight: bold;
-}
-.blo8 .module li .btn span{
-	color:#a3a2a2;
+.blo11 .module li .txt{
+	line-height:22px;
+	height:48px;
+	font-size:14px;
 	font-weight:bold;
-	float:right;
+	overflow: hidden;
 }
-.blo8 .module li .btn span a{ color:#a3a2a2;}
+
+.blo11 .module li .txt a{
+}
+.blo11 .module li .txt span{
+	color:#dc0303;
+}
+.blo11 .module li .price{ height:25px; font-size:14px; font-weight:bold; font-family:"微软雅黑";}
+.blo11 .module li .price span{ color:#b00000;}
+.blo11 .module li .btn{
+	height:35px;
+	color:#999;
+	overflow:hidden;
+}
+.blo11 .module li .btn input{ width:95px; height:25px; background:url(../images/xxy/p4.png) no-repeat; border:0;}

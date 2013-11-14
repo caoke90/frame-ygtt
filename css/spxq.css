@@ -132,8 +132,25 @@ body{}
 	height:50px;
 	border-bottom: 1px solid #ddd;
 }
-.blo2 .module .d6h .b1{ width:186px; height:35px; background:url(../images/xxy/b1.png); color:#fff; font-family:"微软雅黑"; font-size:16px;}
-.blo2 .module .d6h .b2{ width:186px; height:35px; background:url(../images/xxy/b2.png);color:#fff; font-family:"微软雅黑"; font-size:16px; text-indent:30px;}
+.blo2 .module .d6h .b1{
+	width:186px;
+	height:35px;
+	background:url(../images/xxy/b1.png);
+	color:#fff;
+	font-family:"微软雅黑";
+	font-size:16px;
+	cursor: pointer;
+}
+.blo2 .module .d6h .b2{
+	width:186px;
+	height:35px;
+	background:url(../images/xxy/b2.png);
+	color:#fff;
+	font-family:"微软雅黑";
+	font-size:16px;
+	text-indent:30px;
+	cursor: pointer;
+}
 .blo2 .module .d7h{
 	padding:0 10px;
 	font-size: 16px;

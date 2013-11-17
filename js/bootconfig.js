@@ -3,8 +3,10 @@ seajs.config({
     alias: {
         "slidex": "slidex.js",
         "slidex3":"slidex.js",
-	
-        "slidef":"slidex.js"
+		"slidebig":"slidex.js",
+        "slidef":"slidex.js",
+		 "slidexn":"slidex.js",
+		"slidexn3":"slidex.js"
     }
 })
 //加载jsui对应的js

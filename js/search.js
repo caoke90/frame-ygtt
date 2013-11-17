@@ -1,5 +1,5 @@
 define(function(require,exports,module){
-	require("con/jquery.autocomplete.js")
+	require("com/jquery.autocomplete.js")
 	function formatItem(row) {
         return " <p>" + row[0] + " </p>" + " <span>" + row[1] + "个结果</span>";
     }

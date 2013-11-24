@@ -20,125 +20,22 @@
 .main{padding-bottom:10px;}
 .txt{color:#404040;}
 .txt a{color:#242424;}
-.main .gg{ padding-top:10px; margin-bottom:10px; text-align:center; width:100%; float:left;}
-.blo1{
-	float:left;
-	z-index:1;
-	position:relative;
-	text-align: center;
-	width: 100%;
-	padding-top: 10px;
-	border: 1px solid #ddd;
-}
-.blo1 .title{
-	background: #b00000;
-	font-family: "黑体";
-	color: #fff;
-	height:39px;
-	line-height:39px;
-}
-.blo1 .title .titletext{ font-size:14px; float:left;}
-.blo1 .title .titlemore{ font-size:14px; float:left;}
-.blo1 .title .titlemore li{ float:left;font-size:14px; color:#fff; padding:0 10px;}
-.blo1 .title .titlemore li a{color:#fff;}
-.blo1 .title1{
-	width:100%;
-	font-family: "黑体";
-	font-weight:bold;
-	line-height:22px;
-	position: relative;
-}
-.blo1 .title1 .titletext{
-	font-size:14px;
-	color:#403a3a;
-	position: absolute;
-	float: none;
-	top: 10px;
-	left: 14px;
-}
-.blo1 .title1 .titletext img{ margin-right:8px; vertical-align:bottom;}
-.blo1 .title1 .titlemore{
-	font-size:14px;
-	float: none;
-	padding-left: 66px;
-	position: relative;
-	top: 0px;
-	border-bottom: 1px solid #ddd;
-	margin: 0 28px;
-	padding-top: 10px;
-	font-weight: normal;
-}
-.blo1 .title1 .titlemore li{
-	float:left;
-	font-size:14px;
-	padding:0 5px;
-	margin-right: 10px;
-	margin-bottom: 8px;
-	color: #757373;
-}
-.blo1 .title1 .titlemore li a{color:#3caca7; }
-.blo1 .title1 .titlemore li.on{
-	background:#3caca7;
-	color: #fff;
-}
-.blo1 .title1 .titlemore li.on a{ color:#fff;}
-
-.blo1 .module{
-	font-size:14px;
-	padding:10px 20px;
-	height:20px;
-	background:#f7f7f7;
-}
-.blo1 .module .ul1{ float:left;}
-.blo1 .module .ul1 li{ font-family:"黑体";color:#606060;padding:1px 10px; border:1px solid #ddd; float:left; font-size:14px; }
-.blo1 .module .ul1 li a{color:#606060;}
-.blo1 .module .ul1 li img{ vertical-align:middle; margin-left:5px;}
-.blo1 .module .ul2{ float:left; padding-left:20px;}
-.blo1 .module .ul2 li{ float:left;padding:1px 10px; font-size:14px; }
-.blo1 .module .ul2 li input{ margin-right:5px; border:1px solid #ddd;}
-.blo2{}
-
-.blo2 .module{}
-.blo2 .module ul{float:none;width:1300px;}
-.blo2 .module ul li{
-	width:365px;
-	margin-right:26px;
-	margin-bottom:10px;
-	border:1px solid #ddd;
-	float:left;
-}
-.blo2 .module div{ width:330px; margin:0 auto;}
-.blo2 .module .img{margin:0 20px;margin-top:10px;}
-.blo2 .module .txt{line-height:22px;margin-top:10px; font-size:18px; }
-.blo2 .module .txt h2{ font-size:20px; font-family:"黑体"; line-height:30px;}
-
-.blo2 .module .btn{line-height:40px;font-size:14px;font-weight:bold;color:#404040;height:50px;}
-.blo2 .module .btn .z{
-	width:200px;
-	color: #abaaaa;
-	font-size:14px;
-}
-.blo2 .module .btn .z span{ font-size:24px; color:#e44c02;}
-.blo2 .module .btn .y{ width:130px;}
-
-.blo2 .module .mes{
-	font-size:14px;
-	height: 46px;
-	width:100%;
-	font-family:"黑体";
-	line-height:46px;
-	background:#f9f9f9;
-	border-top:1px solid #ddd;
-}
-.blo2 .module .mes .z{ padding-left:20px;width:170px;font-size:14px; color: #abaaaa;}
-.blo2 .module .mes .z img{ vertical-align:middle; margin-right:10px;}
-.blo2 .module .mes .y{ padding-right:20px;width:100px;	font-size:14px;}
-.blo2 .module .mes .y span{ color:#ff5400; font-family:"黑体";}
-
-.blo3{width:100%;float:left;}
-.blo3 .page{padding-top:1px;float:right;background:#fff;padding-bottom:1px;width:300px;}
-.blo3 .page span{float:left;}
-.blo3 .page a{display:block;float:left;padding-left:9px;padding-right:9px;height:24px;margin:0 2px;line-height:22px;text-align:center;}
-.blo3 .page a.prev{height:22px;padding-left:15px;padding-right:15px;text-align:center;border:1px solid #ddd;display:inline-block;}
-.blo3 .page a.next{height:22px;padding-left:15px;padding-right:15px;text-align:center;border:1px solid #ddd;}
-.blo3 .page a.on{background:#f76706;color:#FFF;font-weight:bold;}
+.left{ width:886px; padding-top:20px;}
+.right{ width:251px;}
+.blo1{ border:1px solid #ddd;padding-top:30px; padding-left:30px;}
+.blo1 .title{ height:auto; padding:0; padding-right:20px;}
+.blo1 .h1{ font-size:40px; font-family:"黑体"; line-height:50px;}
+.blo1 .h2{ font-size:30px; color:#7b7b7b; font-family:"黑体"; line-height:35px;}
+.blo1 .module{ height:390px;font-family:"微软雅黑"; text-align:center; margin-bottom:10px;}
+.blo1 .module .z{ width:580px; height:390px;}
+.blo1 .module .y{ width:260px;height:390px; font-size:14px; border:1px solid #ddd;}
+.blo1 .mod1{ height:55px;}
+.blo1 .mod1 div{  background:#ededed;float:left; border:1px solid #ddd; width:84px;text-align:center; padding-top:8px; padding-bottom:8px;}
+.blo1 .mod1 div span.gray{ color:#a7a7a7; font-size:14px;}
+.blo1 .mod1 div span{ width:80px; display:block; line-height:20px; font-size:14px;}
+.blo1 .mod2{ font-size:34px; color:#f97a13; text-align:center; padding-top:10px; margin-bottom:20px;}
+.blo1 .mod3{font-size:16px;font-family:"黑体"; color:#303030; }
+.blo1 .mod4{font-size:16px; font-family:"黑体"; line-height:30px; padding-top:10px;color:#474747; font-weight:bold;}
+.blo1 .mod4 span{color:#f97a13;line-height:30px; font-size:30px;}
+.blo1 .mod5{font-size:14px;font-family:"黑体";line-height:30px; margin-bottom:20px;font-weight:bold;color:#474747;}
+.blo1 .mod6{ color:#474747; font-size:26px;font-family:"黑体";  margin-bottom:25px;font-weight:bold;}

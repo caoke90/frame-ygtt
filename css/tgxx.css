@@ -1,6 +1,7 @@
 @import "base.css";@import "top.css";@import "bottom.css";.con{
 	margin:0 auto;
 }
+.throuth{ text-decoration:line-through;}
 /*水印*/
 .module .img{position:relative;}
 .module .img q{
@@ -20,8 +21,12 @@
 .main{padding-bottom:10px;}
 .txt{color:#404040;}
 .txt a{color:#242424;}
-.left{ width:886px; padding-top:20px;}
-.right{ width:251px;}
+.left{ width:886px; padding-top:20px; float:left;}
+.right{
+	width:250px;
+	padding-top:20px; 
+	float: right;
+}
 .blo1{ border:1px solid #ddd;padding-top:30px; padding-left:30px;}
 .blo1 .title{ height:auto; padding:0; padding-right:20px;}
 .blo1 .h1{ font-size:40px; font-family:"黑体"; line-height:50px;}
@@ -39,3 +44,276 @@
 .blo1 .mod4 span{color:#f97a13;line-height:30px; font-size:30px;}
 .blo1 .mod5{font-size:14px;font-family:"黑体";line-height:30px; margin-bottom:20px;font-weight:bold;color:#474747;}
 .blo1 .mod6{ color:#474747; font-size:26px;font-family:"黑体";  margin-bottom:25px;font-weight:bold;}
+.blo2{}
+.blo2 .title{ height:50px; line-height:50px; border:1px solid #c8c8c8; background:#f3f3f3;}
+.blo2 .title .titletext{ background:url(../images/tgxx/hx.png) no-repeat 5px 15px; color:#272727; font-size:16px; padding-left:30px;}
+.blo2 .title .titlemore{ width:300px;}
+.bshare-custom{ padding-top:15px;}
+.blo2 .title .titlemore label{ float:left;}
+.blo2 .module{ font-size:16px; font-family:"微软雅黑"; line-height:40px;}
+.blo2 .module span.sp1{ padding-left:30px;}
+.blo2 .module span.sp2{font-size:28px; color:#e21704; font-weight:bold;}
+.blo2 .module span.sp3{}
+.blo2 .module span.sp4{ padding-left:30px;}
+.blo2 .module span.sp5{ float:right; color:#00a8aa; padding-right:20px;}
+.blo2 .module span.sp5 a{color:#00a8aa;}
+.blo3{ border:1px solid #ddd;}
+.blo3 .title{ font-size:20px; font-family:"黑体"; line-height:50px; height:50px; padding-left:25px;}
+.blo3 .module{}
+.blo3 .module ul{}
+.blo3 .module li{ line-height:40px; height:40px; font-size:16px; width:842px; border-bottom:1px solid #ddd; margin:0 auto;font-family:"黑体";}
+.blo3 .module li span{margin-right:10px;}
+.blo3 .module li span:nth-child(1){font-size:18px; color:#d31d1d; }
+.blo3 .module li span:nth-child(4){  float:right;}
+.blo3 .module li:last-child{ border:0;}
+.blo4{ border:1px solid #ddd;}
+.blo4 .title{
+	padding:0;
+	height:56px;
+}
+.blo4 .title ul{ height:54px; overflow:visible; border-bottom:1px solid #ddd;}
+.blo4 .title li{
+	background:#fff;
+	float:left;
+	width:108px;
+	height:54px;
+	text-align:center;
+	line-height:50px;
+	font-size:18px;
+	color:#b00000;
+	border-right: 1px solid #d9d9d9;
+	cursor: pointer;
+}
+.blo4 .title li.on{
+	border-top:5px solid #b00000;
+	width:115px;
+	color:#404040;
+	border-bottom:0;
+	border-left:0;
+}
+.blo4 .title2{ font-size:22px; font-family:"微软雅黑"; height:50px; padding-left:20px;}
+
+.blo4 .module{
+	padding:0 25px;
+	height: 330px;
+}
+.blo4 .module .l{
+	float:left;
+	width:400px;
+	height:320px;
+}
+.blo4 .module .r{
+	float:right;
+	font-size:16px;
+	width: 400px;
+	font-family:"微软雅黑";
+}
+.blo4 .module .r ul{
+	line-height:35px;
+	height: 300px;
+}
+.blo4 .module .r li{
+	 line-height:35px;
+	color:#179882;
+	font-size:16px;
+	border-top: 1px solid #ddd;
+}
+.blo4 .module .r li span.an{
+	background:url(../images/tgxx/show.png);
+	width:15px;
+	height:15px;
+	display:block;
+	cursor:pointer;
+	margin-top:5px;
+	float: right;
+}
+.blo4 .module .r li a{color:#179882;}
+.blo4 .module .r dl a{color:#179882;}
+.blo4 .module .r dl{font-size:16px;}
+.blo4 .module .r dl{font-size:16px;}
+.blo4 .module .r dl span{ margin-right:5px;font-size:16px;}
+.blo4 .module .r .pagemod{
+}
+.blo4 .module .r .pagemod .all{
+	float:right;
+	font-size: 16px;
+}
+.blo4 .module .r .pagemod .all a{color:#179882;}
+.blo4 .page span{float:left;}
+.blo4 .page a{
+	display:block;
+	float:left;
+	padding-left:5px;
+	padding-right:5px;
+	height:22px;
+	margin:0 2px;
+	line-height:22px;
+	text-align:center;
+}
+.blo4 .page a.prev{
+	height:22px;
+	padding-left:10px;
+	padding-right:10px;
+	text-align:center;
+	border:1px solid #ddd;
+	display:inline-block;
+}
+.blo4 .page a.next{
+	height:22px;
+	padding-left:10px;
+	padding-right:10px;
+	text-align:center;
+	border:1px solid #ddd;
+}
+.blo4 .page a.on{background:#f76706;color:#FFF;font-weight:bold; }
+
+.blo5{}
+.blo5 .title{ background:#b00000; height:39px; color:#fff; line-height:39px; padding-left:20px; font-size:18px;}
+.blo5 .module{ padding:10px 0;}
+.blo6{border:1px solid #ddd;}
+.blo6 .title{ background:#f3f3f3; height:47px; line-height:47px; border:1px solid #ddd; font-size:18px;}
+.blo6 .titletext{ font-size:18px;}
+.blo6 .titlemore{ font-size:16px;}
+.blo6 .titlemore a{color:#179882;}
+.blo6 .module{
+	height: 180px;
+}
+.blo6 .module .mod1{ text-align:center; float:left; width:260px; border-right:1px solid #ddd; line-height:30px; font-size:18px; height:145px; padding-top:30px;}
+.blo6 .module .mod1 *{ font-size:18px; font-family:"黑体";}
+.blo6 .module .mod2{ padding-left:80px; float:left;width:230px;border-right:1px solid #ddd; line-height:30px;height:145px; padding-top:30px;}
+.blo6 .module .mod2 span{ font-size:18px;}
+.blo6 .module .mod3{
+	height:165px;
+	padding-top:10px;
+	padding-left:40px;
+	float:left;
+	line-height:30px;
+}
+.blo6 .module .mod3 span{
+	font-size:18px;
+	margin-right: 8px;
+}
+.blo7{border:1px solid #ddd;}
+.blo7 .title{ background:#f3f3f3; height:47px; line-height:47px; border:1px solid #ddd; font-size:18px;}
+.blo7 .titletext{ font-size:18px;}
+.blo7 .titlemore{ font-size:18px;}
+.blo7 .module{}
+.blo7 .module li{ width:850px; margin:0 auto; padding:15px 0; border-bottom:1px solid #ddd; line-height:30px; font-size:16px; font-family:"黑体";}
+.blo7 .module div{font-size:16px;}
+.blo7 .module div.h2{ color:#b5b4b4;}
+.blo7 .module div.h2 span{
+	font-size:16px;
+	margin-right: 8px;
+}
+.blo7 .module div.info{}
+.blo7 .module div.txt{ color:#b5b4b4;}
+.blo7 .page{ height:40px; padding-top:20px; padding-left:200px;}
+.blo7 .page span{float:left;}
+.blo7 .page a{
+	display:block;
+	float:left;
+	padding-left:8px;
+	padding-right:8px;
+	height:22px;
+	margin:0 2px;
+	line-height:22px;
+	text-align:center;
+}
+.blo7 .page a.first{height:22px;
+	padding-left:15px;
+	padding-right:15px;
+	text-align:center;
+	border:1px solid #ddd;
+	display:inline-block;}
+.blo7 .page a.last{height:22px;
+	padding-left:15px;
+	padding-right:15px;
+	text-align:center;
+	border:1px solid #ddd;
+	display:inline-block;}
+.blo7 .page a.prev{
+	height:22px;
+	padding-left:15px;
+	padding-right:15px;
+	text-align:center;
+	border:1px solid #ddd;
+	display:inline-block;
+}
+.blo7 .page a.next{
+	height:22px;
+	padding-left:15px;
+	padding-right:15px;
+	text-align:center;
+	border:1px solid #ddd;
+}
+.blo7 .page a.on{background:#f76706;color:#FFF;font-weight:bold; }
+.blo8{ height:440px; }
+.blo8 .module .l{ width:580px; height:390px; float:left;}
+.blo8 .module .r{ width:290px; height:390px; float:right; background:#f3f3f3;font-family:"微软雅黑";}
+.blo8 .module div.txt{ background:url(../images/tgxx/bag.png) no-repeat #fff -1px; width:285px;height:92px; border:2px solid #ddd; margin-bottom:20px; margin-top:40px;}
+.blo8 .module div.txt .z{ font-size:36px; color:#f97a13; padding-top:25px; padding-left:10px;}
+.blo8 .module div.txt .y{
+	font-family:"微软雅黑";
+	width:140px;
+	line-height:22px;
+	padding-top:15px;
+}
+.blo8 .module div.txt .y div{ float:left; width:38px; font-size:14px; margin-right:8px;}
+
+.blo8 .module div.txt .y span.gray{ color:#a7a7a7; font-size:14px;}
+.blo8 .module div.btn{ margin-bottom:20px; height:55px;}
+.blo8 .module div.btn .qg{
+	background:url(../images/tgxx/qg.png);
+	width:114px;
+	height:53px;
+	border:0;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+	cursor: pointer;
+}
+.blo8 .module div.btn .jrgwc{
+	background:url(../images/tgxx/jrgwc.png);
+	width:125px;
+	height:53px;
+	border:0;
+	float:left;
+	margin-right:10px;
+	cursor: pointer;
+}
+.blo8 .module div.fenx{ padding-left:10px; height:40px;margin-bottom:30px; font-size:16px;}
+.blo8 .module div.fenx label{ float:left;}
+.blo8 .module div.fenx .bshare-custom{ float:left;}
+.blo8 .module div.shouc{
+	font-size:16px;
+	text-align:right;
+	padding-right:20px;
+	padding-top: 30px;
+}
+.blo8 .module div.shouc span.hongx{ background:url(../images/tgxx/hongx.png) no-repeat;  height:20px; padding-left:30px;}
+
+
+/*right*/
+.blo10{ border:1px solid #ddd;}
+.blo10 .title{
+	font-size:26px;
+	font-family:"黑体";
+	line-height: 42px;
+	height: 42px;
+}
+.blo10 .module{ padding:0;}
+.blo11{ border:1px solid #ddd;}
+.blo11 .title{ height:35px; line-height:35px; padding:0 15px;}
+.blo11 .module{ padding:0;}
+.blo11 .module li{ border-bottom:1px dashed #ddd; padding-bottom:15px;}
+.blo11 .module div{ margin:0 auto;width:217px; font-family:"黑体";}
+.blo11 .module div.img{ width:217px; margin-bottom:8px; padding-top:8px;}
+.blo11 .module div.txt{ height:40px; font-size:14px;font-family:"微软雅黑";}
+.blo11 .module div.price{ height:30px; line-height:30px;}
+.blo11 .module div.price .z{ width:110px; color:#706f6f; font-size:14px;}
+.blo11 .module div.price .z span{ font-size:18px; color:#b00000;}
+.blo11 .module div.price .z font{
+	text-decoration: line-through;
+}
+.blo11 .module div.price .y{width:100px; font-size:14px; text-align:right;}
+.blo11 .module div.price .y span{ color:#ff5400; font-weight:bold;}

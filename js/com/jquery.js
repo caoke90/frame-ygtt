@@ -1,6 +1,6 @@
 define(function(require,exports,module){
 
-    require("./jquery/jquery-1.8.2.js")
+    require("jquery-1.7.1.min.js")
 
     module.exports=jQuery;
 })

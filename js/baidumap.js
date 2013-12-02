@@ -1,5 +1,12 @@
 
-	document.write('<link rel="stylesheet" type="text/css" href="http://api.map.baidu.com/res/14/bmap.css"/>'); 
+define(function(require,exports,module){
+	$("a[maphref]").each(function(i){
+		var txt=$(this).attr("maphref")
+		var url="http://map.baidu.com/?newmap=1&s=s"+encodeURIComponent("&wd="+txt+"&c=53")
+		
+		$(this).attr("href",url)
+	})
+	require("http://api.map.baidu.com/res/14/bmap.css")
 	seajs.use("http://api.map.baidu.com/getscript?v=1.4&key=&services=&t=20130219081854",function(){
 		$("div[jsui=baidumap]").each(function(i){
 			var mconfig={
@@ -42,16 +49,8 @@
 				}, mconfig.center);
 			}
 			bdGEO()
+			
 		})
-
-/*	
-	$(".addmap").each(function(i){
-		mconfig.adds.push($(this).text());
-		var url="http://map.baidu.com/?newmap=1&s=con"+encodeURIComponent("&wd="+mconfig.center+$(this).text()+"&c=53")+"&fr=alam0&ext=1&from=alamap"
-		$(".mod h2,.mod h3").eq(i).find("a").attr("href",url)
-	})*/
-	
-	
-	
 	})
 
+})

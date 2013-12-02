@@ -1,9 +1,9 @@
 
 	document.write('<link rel="stylesheet" type="text/css" href="http://api.map.baidu.com/res/14/bmap.css"/>'); 
 	seajs.use("http://api.map.baidu.com/getscript?v=1.4&key=&services=&t=20130219081854",function(){
-		$("div[jsui=baidumap]").each(function(){
+		$("div[jsui=baidumap]").each(function(i){
 			var mconfig={
-				id:"mapygtg",
+				id:"mapygtg"+i,
 				zoom:"14",
 				center:"",
 				adds:[]
@@ -16,7 +16,7 @@
 			})
 			
 			var map = new BMap.Map(mconfig.id);
-			map.enableScrollWheelZoom();                            //启用滚轮放大缩小
+//			map.enableScrollWheelZoom();                            //启用滚轮放大缩小
 			var index = 0;
 			var myGeo = new BMap.Geocoder();
 			myGeo.getPoint(mconfig.center, function(point){

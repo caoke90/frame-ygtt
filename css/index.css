@@ -231,7 +231,10 @@ body{}
 .blo7 .module li .img{text-align:center;padding-bottom:5px;padding-top:10px;position:relative;}
 .blo7 .module li .txt{overflow:hidden;line-height:18px;height:40px;}
 .blo7 .module li .txt a{color:#666;}
-.blo7 .module li .btn{height:18px;color:#999;text-indent:-47px;overflow:hidden;}
+.blo7 .module li .btn{
+	height:18px;
+	color:#999;
+}
 .blo7 .module li .btn b{color:#F00;}
 .blo7 .image{height:115px;}
 .blo7 .image ul{ padding-left:1px; text-align:center;}

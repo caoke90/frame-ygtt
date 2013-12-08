@@ -182,15 +182,21 @@
 .blo2 .title{
 	padding:0;
 	color:#666;
-	line-height:20px;
+	line-height:28px;
 	height:28px;
 	
 }
-.blo2 .titletext{ width:60px; height:20px; border:1px solid #ddd;  text-align:center; font-family:"微软雅黑";}
+.blo2 .titletext{
+	font-family:"微软雅黑";
+}
 .blo2 .titlemore{ float:right; }
 .blo2 .titlemore a{color:#5a9dde;}
 .blo2 .table{ font-size:14px;font-family:"微软雅黑";}
-.blo2 .thead{ height:34px; line-height:30px;  border-top:3px solid #ca0000;border-bottom:1px solid #ddd;}
+.blo2 .thead{
+	height:34px;
+	line-height:30px;
+	border-bottom:1px solid #ddd;
+}
 .blo2 .thead li div{ padding-top:3px;float:left; font-weight:bold; color:#404040;font-size:14px;font-family:"微软雅黑";}
 .blo2 .thead li div:nth-child(1){  padding-left:10px;}
 .blo2 .thead div:nth-child(2){width:235px;}
@@ -233,7 +239,11 @@
 	height:85px;
 }
 .blo2 .tfoot li{ font-size:14px; position:relative;}
-.blo2 .tfoot li>div{ float:left; margin-left:10px; font-size:14px;}
+.blo2 .tfoot li>div{
+	float:right;
+	margin-left:10px;
+	font-size:14px;
+}
 .blo2 .tfoot li div a{ color:#317cd3;}
 .blo2 .tfoot li div.ddbg{
 	border:1px solid #ddd;

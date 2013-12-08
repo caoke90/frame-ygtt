@@ -11,6 +11,173 @@
 }
 
 /*blo2*/
+.head{ margin:0 auto; text-align:center;}
+.contain{
+	margin:0 auto;
+	width:1185px;
+	border:3px solid #aacded;
+	border-top:0;
+}
+.contain label{ color:#005ea7; cursor:pointer;}
+.contain .edit{
+	border-top:2px solid #aacded;
+	border-bottom:2px solid #aacded;
+	width:1130px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+.contain .show{
+	border-top:2px solid #aacded;
+	border-bottom:2px solid #aacded;
+	width:1130px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+.contain1{
+	padding-top:20px;
+	margin-bottom:10px;
+}
+.contain .edit .titletext{ font-size:14px;}
+.contain .edit .titlemore{ float:left; font-weight:normal;}
+.contain .show .titletext{ font-size:14px;}
+.contain .show .titlemore{ float:left; font-weight:normal;}
+.contain1 .edit .list{ border:1px dashed #aacded; width:1050px; margin:0 auto;}
+.contain1 .edit .list .h2{ padding-left:10px; line-height:26px; color:#87b4c9; font-weight:bold;}
+.contain1 .edit .list ul{ }
+.contain1 .edit .list li{padding-left:20px; color:#87b4c9; line-height:22px;}
+.contain1 .edit .list li.on{ background:#eff5f8;}
+.contain1 .edit .list li label{ margin-left:10px;}
+.contain1 .edit .list li input{ margin-right:10px;}
+.contain1 .edit .module{ padding-left:50px;}
+.contain1 .show .module{ padding-left:50px; line-height:20px; margin-bottom:10px;}
+.contain1 .edit .module div{
+	line-height:30px;
+	display: block;
+}
+.contain1 .edit .module div span{
+	color:#404040;
+	left:0;
+	top: 0px;
+}
+.contain1 .edit .module div input{ margin-right:8px;}
+.contain1 .edit .btn{ margin-bottom:15px;padding-left:20px;}
+.contain1 .edit .btn input{ width:187px; height:30px; background:url(../images/gmlc2/btn.png); border:0;}
+.contain2 .edit{}
+.contain2 .edit .pay{}
+.contain2 .edit .pay .h2{
+	line-height:30px;
+	font-weight:bold;
+	padding-left:30px;
+	height: 30px;
+}
+.contain2 .edit .pay .h2 .titletext{ width:300px;}
+.contain2 .edit .pay .h2 .titlemore{}
+.contain2 .edit .pay ul{}
+.contain2 .edit .pay ul li{
+	padding-left:35px;
+	line-height: 20px;
+}
+.contain2 .edit .pay ul li input{ margin-right:5px;}
+.contain2 .edit .pay ul li span{ margin-left:220px;}
+.contain2 .edit .take .h2{
+	line-height:30px;
+	font-weight:bold;
+	padding-left:30px;
+	height: 30px;
+}
+.contain2 .edit .take .h2 .titletext{margin-right:100px;}
+.contain2 .edit .take .h2 .titlemore{}
+.contain2 .edit .take .h2 .titlemore span{ margin-right:100px;}
+.contain2 .edit .take ul{}
+.contain2 .edit .take ul li{
+	padding-left:35px;
+	line-height: 24px;
+}
+.contain2 .edit .take ul li input{ margin-right:5px;}
+.contain2 .edit .take ul li span{
+	margin-left: 80px;
+}
+.contain2 .edit .takelist{
+	padding-left:20px;
+	border:1px dashed #aacded;
+	width:950px;
+	margin:0 auto;
+	margin-bottom:30px;
+	background: #fff;
+}
+.contain2 .edit .takelist span{
+	line-height:30px;
+	padding-left:0;
+
+}
+.contain2 .edit .takelist .red{
+	color:#b00000;
+	float: left;
+}
+.contain2 .edit .btn{ margin-bottom:15px;padding-left:20px;}
+.contain2 .edit .btn input{ background:url(../images/gmlc2/zhifu.png); width:247px; height:30px; border:0; cursor:pointer;}
+.contain2 .show .module{ padding-left:50px; line-height:20px; margin-bottom:10px;}
+
+.contain3 .edit{}
+.contain3 .edit .pay{}
+.contain3 .edit .pay .h2{
+	line-height:30px;
+	font-weight:bold;
+	padding-left:30px;
+	height: 30px;
+}
+.contain3 .edit .pay .h2 .titletext{ width:300px;}
+.contain3 .edit .pay .h2 .titlemore{}
+.contain3 .edit .pay ul{
+
+}
+.contain3 .edit .pay ul li{
+	padding-left:35px;
+	line-height: 26px;
+}
+.contain3 .edit .pay ul li input{ margin-right:5px;}
+.contain3 .edit .pay ul li span{
+	margin-left:0px;
+}
+.contain3 .edit .take .h2{
+	line-height:30px;
+	font-weight:bold;
+	padding-left:30px;
+	height: 30px;
+}
+.contain3 .edit .take .h2 .titletext{margin-right:100px;}
+.contain3 .edit .take .h2 .titlemore{}
+.contain3 .edit .take .h2 .titlemore span{ margin-right:100px;}
+.contain3 .edit .take ul{}
+.contain3 .edit .take ul li{
+	padding-left:35px;
+	line-height: 24px;
+}
+.contain3 .edit .take ul li input{ margin-right:5px;}
+.contain3 .edit .take ul li span{
+	margin-left: 80px;
+}
+.contain3 .edit .takelist{
+	padding-left:20px;
+	border:1px dashed #aacded;
+	width:950px;
+	margin:0 auto;
+	margin-bottom:30px;
+	background: #fff;
+}
+.contain3 .edit .takelist span{
+	line-height:30px;
+	padding-left:0;
+
+}
+.contain3 .edit .takelist .red{
+	color:#b00000;
+	float: left;
+}
+.contain3 .edit .btn{ margin-bottom:15px;padding-left:20px;}
+.contain3 .edit .btn input{ background:url(../images/gmlc2/zhifu.png); width:247px; height:30px; border:0; cursor:pointer;}
+.contain3 .show .module{ padding-left:50px; line-height:20px; margin-bottom:10px;}
+/*blo2*/
 .blo2{margin-top:14px;}
 .blo2 .title{
 	padding:0;
@@ -88,74 +255,3 @@
 	top:40px;
 	left:0px;
 }
-
-/*blo3*/
-.blo3{float:left;margin-top:5px;width:100%;height:60px;}
-.blo3 .module{float:right;width:190px;}
-.blo3 .jxgw input{font-size:14px;color:#666;background:url(../images/gwc/gwc.png) 0px -150px;border:0;width:82px;height:28px;float:left;cursor:pointer;}
-.blo3 .qjs input{background:url(../images/gwc/gwc.png) -100px -150px;margin-left:10px;color:#fff;cursor:pointer;font-size:14px;border:0;width:82px;height:28px;float:left;}
-/*.blo7*/
-.blo7{float:left;width:100%;border:1px solid #ddd;overflow:hidden;}
-.blo7 .title{
-	background:#f6f6f6;
-	border-bottom:1px solid #ddd;
-	height:43px;
-	padding-left:0px;
-	position: relative;
-	overflow: visible;
-}
-.blo7 .title ul{
-	width:1200px;
-	padding-left: 20px;
-	z-index: 1;
-	height: 33px;
-	position: absolute;
-	top: 9px;
-}
-.blo7 .title li{
-	width:110px;
-	height:34px;
-	float:left;
-	text-align:center;
-	margin-right:4px;
-	color: #666;
-	border: 1px solid #ddd;
-	cursor: pointer;
-}
-.blo7 .title li q{position:absolute;right:0;color:#ddd;font-size:20px;top:0;}
-.blo7 .title li b{float:left;}
-.blo7 .title li.on{
-	background:#fff;
-	color: #000;
-	border-bottom: 0;
-}
-.blo7 .title li.on q{display:none;}
-.blo7 .module{padding:0;position:static;}
-.blo7 .module ul{width:1200px;}
-.blo7 .module li{
-	width:235px;
-	float:left;
-	height:100px;
-	padding-top:10px;
-	padding-bottom:5px;
-}
-
-.blo7 .module li .img{
-	height:80px;
-	padding-top:5px;
-	margin-top:10px;
-	position:relative;
-	float: left;
-	padding-left:25px;
-	width: 80px;
-}
-.blo7 .module li .img img{ border:1px solid #ddd;}
-.blo7 .module li .img q{position:absolute;top:-7px;right:-19px;width:50px;height:50px;z-index:2;}
-.blo7 .module li .img q.xp{background:url(../images/ejfl/ejfl.png) -0px -200px;}
-.blo7 .module li .img q.mqjb{background:url(../images/ejfl/ejfl.png) -50px -200px;}
-.blo7 .module li .img q.zj{background:url(../images/ejfl/ejfl.png) -100px -200px;}
-.blo7 .module li .img q.rm{background:url(../images/ejfl/ejfl.png) -150px -200px;}
-.blo7 .module li .img q.xszk{background:url(../images/ejfl/ejfl.png) -200px -200px;}
-.blo7 .module li .txt{ padding-top:15px; padding-left:10px;height:30px;overflow:hidden;line-height:16px; display:block;}
-.blo7 .module li .btn{height:18px; text-indent:10px;line-height:28px;color:#999; display:block;}
-.blo7 .module li .btn b{color:#F00;}

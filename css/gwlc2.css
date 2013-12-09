@@ -177,91 +177,84 @@
 .contain3 .edit .btn{ margin-bottom:15px;padding-left:20px;}
 .contain3 .edit .btn input{ background:url(../images/gmlc2/zhifu.png); width:247px; height:30px; border:0; cursor:pointer;}
 .contain3 .show .module{ padding-left:50px; line-height:20px; margin-bottom:10px;}
+.payframe{ padding-left:50px;}
 /*blo2*/
-.blo2{margin-top:14px;}
+.blo2{
+	margin-top:14px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
 .blo2 .title{
 	padding:0;
-	color:#666;
+	color:#404040;
 	line-height:28px;
 	height:28px;
 	
 }
 .blo2 .titletext{
-	font-family:"微软雅黑";
 }
 .blo2 .titlemore{ float:right; }
 .blo2 .titlemore a{color:#5a9dde;}
-.blo2 .table{ font-size:14px;font-family:"微软雅黑";}
+.blo2 .table{
+	font-size:14px;
+	
+}
 .blo2 .thead{
 	height:34px;
-	line-height:30px;
-	border-bottom:1px solid #ddd;
+	line-height:33px;
+	background: #fff4d7;
+	border-bottom:1px solid #ccc;
 }
-.blo2 .thead li div{ padding-top:3px;float:left; font-weight:bold; color:#404040;font-size:14px;font-family:"微软雅黑";}
-.blo2 .thead li div:nth-child(1){  padding-left:10px;}
-.blo2 .thead div:nth-child(2){width:235px;}
-.blo2 .thead div:nth-child(2) span{ border:1px solid #ddd; height:28px; line-height:28px; padding:5px; margin-left:5px;}
-.blo2 .thead li div:nth-child(3){ width:340px;}
-.blo2 .thead li div:nth-child(4){ width:109px;}
+.blo2 .thead li{}
+.blo2 .thead li div{float:left; color:#404040;font-size:14px;}
+.blo2 .thead li div:nth-child(1){  width:170px; padding-left:30px;}
+.blo2 .thead div:nth-child(2){width:480px;}
+.blo2 .thead li div:nth-child(3){ width:80px;}
+.blo2 .thead li div:nth-child(4){ width:80px;}
 .blo2 .thead li div:nth-child(5){ width:80px;}
-.blo2 .thead li div:nth-child(6){ width:160px;}
-.blo2 .thead li div:nth-child(7){ width:140px;}
-.blo2 .tbody li{ border-bottom:1px solid #ddd; height:96px;}
-.blo2 .tbody li div{ float:left; color:#555; font-weight:bold;}
-.blo2 .tbody li div:nth-child(1){ width:30px; padding-top:37px;text-align:center;}
-.blo2 .tbody li div:nth-child(2){ padding-top:10px; width:90px;}
-.blo2 .tbody li div:nth-child(2) img{ width:75px; height:75px;border:1px solid #ddd;}
-.blo2 .tbody li div:nth-child(3){ width:500px; padding-top:37px;}
-.blo2 .tbody li div:nth-child(4){ padding-top:30px; width:100px;}
-.blo2 .tbody li div:nth-child(4) span{ display:block;}
-.blo2 .tbody li div:nth-child(4) font{ text-decoration:line-through; color:#999;display:block;}
-.blo2 .tbody li div:nth-child(5){ width:120px;padding-top:30px;}
-.blo2 .tbody li div:nth-child(5) span{ border:1px solid #ddd; padding:0 3px; cursor:pointer;}
-.blo2 .tbody li div:nth-child(5) input{ width:30px; text-align:center;}
-.blo2 .tbody li div:nth-child(6){ width:140px;padding-top:30px; color:#999;}
-.blo2 .tbody li div:nth-child(7){width:120px;padding-top:30px; color:#b00000;}
-.blo2 .tbody li div:nth-child(8){ padding-top:30px;}
-.blo2 .tbody li div:nth-child(8) span{ display:block; text-align:center;}
-.blo2 .colection{
-	line-height:40px;
-	height: 50px;
-	padding-left: 900px;
+.blo2 .thead li div:nth-child(6){ width:80px;}
+.blo2 .thead li div:nth-child(7){ width:80px;}
+.blo2 .tbody li{
+	border-bottom:1px solid #ddd;
+	height:30px;
+	line-height:30px;
+	background:#fffddd;
 }
-.blo2 .colection div{ float:left;font-size:14px;font-family:"微软雅黑";}
-.blo2 .colection div:nth-child(1){ margin-right:20px;}
-.blo2 .colection div:nth-child(2){margin-right:20px; }
-.blo2 .tfoot{
-	font-size:14px;
-	font-family:"微软雅黑";
-	width:100%;
-	border:1px solid #ddd;
-	padding-top:10px;
-	height:85px;
+.blo2 .tbody li div{ float:left; color:#555; }
+.blo2 .tbody li div:nth-child(1){ width:100px;text-align:center;}
+.blo2 .tbody li div:nth-child(2){ width:580px; color:#404040;}
+.blo2 .tbody li div:nth-child(3){ width:80px; }
+.blo2 .tbody li div:nth-child(4){width:80px;}
+
+.blo2 .tbody li div:nth-child(5){ width:80px;}
+
+.blo2 .tbody li div:nth-child(6){ width:80px;color:#999;}
+.blo2 .tbody li div:nth-child(7){width:80px; color:#b00000;}
+.blo2 .tbody li div:nth-child(8){ }
+/*.blo3*/
+.blo3{
+	margin-top:14px;
+	margin-left: 30px;
+	margin-right: 30px;
 }
-.blo2 .tfoot li{ font-size:14px; position:relative;}
-.blo2 .tfoot li>div{
-	float:right;
-	margin-left:10px;
-	font-size:14px;
+.blo3 .title{
+	padding:0;
+	color:#404040;
+	line-height:28px;
+	height:28px;
+	
 }
-.blo2 .tfoot li div a{ color:#317cd3;}
-.blo2 .tfoot li div.ddbg{
-	border:1px solid #ddd;
-	height:60px;
-	width:380px;
-	margin-left:320px;
-	font-size:14px;
-}
-.blo2 .tfoot li div.ddbg div:nth-child(1){ background:#f4f4f4; width:200px; height:60px; float:left; text-align:center; line-height:60px; color:#404040; font-size:14px;}
-.blo2 .tfoot li div.ddbg div:nth-child(2){ font-size:14px; padding-right:10px; line-height:26px;}
-.blo2 .tfoot li div.ddbg div:nth-child(2) span{ font-weight:bold; display:block; font-size:16px; text-align:right;}
-.blo2 .tfoot li div.ddbg div:nth-child(2) span font{ font-size:18px; padding:0 5px;color:#b00000; }
-.blo2 .tfoot li div.ddbg div:nth-child(2) span a{ font-size:14px;}
-.blo2 .tfoot li div.price{ font-size:16px; font-weight:bold;line-height:60px;}
-.blo2 .tfoot li div.price span{ padding:0 5px; color:#b00000; font-size:22px;}
-.blo2 .tfoot li div.qrdd input{ background:url(../images/gmlc1/qrdd.png); height:54px; width:180px; cursor:pointer; border:0;}
-.blo2 .tfoot li div.yqg{
-	position:absolute;
-	top:40px;
-	left:0px;
-}
+.blo3 .module{ border-top:2px solid #ebcca0; background:#fff4d7; padding-top:20px; margin-bottom:10px;}
+.blo3 .module .h2{ height:30px; line-height:30px; margin-left:30px; margin-right:30px; border-bottom:1px dashed #ebcca0;}
+.blo3 .module .youhui{margin-left:30px; margin-right:30px;line-height:30px;}
+.blo3 .module .youhui .show1{ padding-left:10px; color:#c68600; font-size:14px;}
+.blo3 .module .youhui .hide1{ padding-left:30px;}
+.blo3 .module .youhui .show2{ padding-left:10px;color:#c68600;font-size:14px;}
+.blo3 .module .youhui .hide2{ padding-left:30px;}
+.blo3 .module .youhui .button{ background:#e43f42; width:50px; height:24px; border:0; color:#fff; margin-left:10px;}
+
+/*.blo4*/
+.blo3 .btn{ text-align:right; margin-bottom:30px;}
+.blo3 .btn .h2{ line-height:30px; font-size:18px; font-weight:bold; margin-bottom:10px;}
+.blo3 .btn .h2 span{ color:#b00000;}
+.blo3 .btn input{ background:url(../images/gmlc2/tjdd.png); width:160px; height:49px; border:0; cursor:pointer;}

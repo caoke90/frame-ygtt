@@ -15,6 +15,7 @@ define(function(require,exports,module){
 		},
 		setContain1Data:function(data){
 			this.data["contain1"]=data
+			this.render()
 		},
 	
 		setSelect:function(id){

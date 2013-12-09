@@ -28,5 +28,13 @@ define(function(require,exports,module){
 			$(".contain").html(this.html);
 		}
 	}
+	//获取模板
+	var tpl=require("./contain.tpl")
+	contain.setTpl(tpl)
+	
+	//获取数据
+	$.get("js/ejs/contain1.data",function(data){
+		contain.setContain1Data(eval(data))
+	})
 	module.exports=contain
 })

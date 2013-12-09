@@ -1,6 +1,6 @@
 define(function(require,exports,module){
 	
-	var contain={
+	contain={
 		html:"",
 		//模板
 		tpl:null,
@@ -15,7 +15,7 @@ define(function(require,exports,module){
 		},
 		setContain1Data:function(data){
 			this.data["contain1"]=data
-			this.render()
+			
 		},
 	
 		setSelect:function(id){
@@ -29,12 +29,24 @@ define(function(require,exports,module){
 		}
 	}
 	//获取模板
-	var tpl=require("./contain.tpl")
-	contain.setTpl(tpl)
+	var i=0
+	i++
+	$.get("js/ejs/contain.html",function(tpl){
+		contain.setTpl(tpl)
+		i--
+		if(i==0){
+			contain.render()
+		}
+	})
 	
 	//获取数据
-	$.get("js/ejs/contain1.data",function(data){
+	i++
+	$.get("js/ejs/contain1.txt",function(data){
 		contain.setContain1Data(eval(data))
+		i--
+		if(i==0){
+			contain.render()
+		}
 	})
 	module.exports=contain
 })

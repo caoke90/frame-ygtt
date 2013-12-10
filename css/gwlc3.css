@@ -1,0 +1,18 @@
+@import "base.css";@import "top.css";@import "bottom.css";.con{width:1201px;margin:0 auto;}
+.block{border:0;}
+.main{padding-bottom:20px;}
+/*blo1*/
+.blo1{
+	padding-top:14px;
+}
+.blo1 .titletext{ color:#404040;font-size:18px; font-family:"微软雅黑"; margin-right:10px;}
+.blo1 .titlemore{ color:#5a9dde; float:left; font-size:12px;}
+.blo1 .module{
+}
+/*gwwc*/
+.gwwc{background:url(../images/gmlc3/gwwc.png);height:136px;position:relative; border-top:1px solid #b6d2de;}
+.gwwc .b{font-family:"微软雅黑";font-size:20px;color:#238a23;position:absolute;top:44px;left:130px;}
+.gwwc .title{font-size:14px;font-weight:normal;color:#404040;position:absolute;left:509px;top:40px;overflow:hidden;height:auto;}
+.gwwc .title font{font-weight:bold;}
+/*.blo2*/
+.blo2{margin-bottom:100px;text-align:center;border-top:2px #b6d2de solid;background:#f0f5f9;padding-top:30px;padding-bottom:30px;}

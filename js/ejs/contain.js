@@ -25,7 +25,7 @@ define(function(require,exports,module){
 		//渲染
 		render:function(){
 			this.html = ejs.render(this.tpl,this.data);
-			$(".contain").html(this.html);
+			$("#contain").html(this.html);
 		}
 	}
 	//获取模板

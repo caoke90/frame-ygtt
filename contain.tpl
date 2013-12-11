@@ -1,6 +1,7 @@
+<link href="css/gwlc2.css" rel="stylesheet" type="text/css" />
 		<div class="contain">
         	<div class="contain1">
-            <% if(state=="编辑"){ %>
+            <% if(state=="选择"&&state=="编辑"){ %>
             <div class="edit">
             	<div class="title">
                 	<div class="titletext">收货人信息</div>
@@ -18,7 +19,7 @@
                     </ul>
                 </div>
                 <% } %>
-                <% if(select>-1){ %>
+                <% if(state=="编辑"){ %>
                 <% var list=contain1[select] %>
                 <div class="module">
                 	<div><span>收货人信息：</spam><input type="text" value="<%= list.name %>" /></div>
@@ -37,7 +38,8 @@
                     <div><span>邮政编码：</span><input type="text" value="<%= list.code %>" />用于接</div>
                     <div><label>[添加到常用地址]</label></div>
                 </div>
-                <% }else{ %>
+                <%}%>
+                <% if(select==-1){ %>
                 	<div class="module">
                 	<div><span>收货人信息：</spam><input type="text" value="" /></div>
                     <div><span>省份：</span><select name="">

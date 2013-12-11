@@ -1,6 +1,7 @@
+
 {
-    "state":"编辑",
-    "select":1,
+    "state1":"关闭",
+    "select1":0,
     "contain1":[{
 		"name":["宋小英"],
 		"province":["北京","朝阳区","四环到五环之间"],
@@ -18,8 +19,16 @@
 		"email":"",
 		"code":""
 	}],
-	"shopping":[{
+    "state2":"关闭",
+    "select2":0,
+	"contain2":[{
 
-	}]
+	}],
+	"state3":"关闭",
+    "select3":0,
+    "contain3":[{
+
+   	}]
+
 }
 

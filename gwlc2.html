@@ -12,7 +12,24 @@
 		seajs.config({
 		  preload: ['seajs/plugin-text',"com/jquery","com/json2","com/ejs"]
 		});
-		seajs.use("ejs/contain")
+		seajs.use("ejs/contain",function(contain){
+            $.get("js/ejs/contain.html",function(tpl){
+                contain.tpl=tpl
+                contain.render()
+            })
+            $.get("js/ejs/contain.data",function(data){
+                contain.data=JSON.parse(data)
+                contain.render()
+            })
+            //改变数据
+            setData=function(name,value){
+                contain.setData(name,value)
+            }
+            //提交
+            commit=function(){
+                $.post("post.php",contain.data)
+            }
+        })
 	</script>
 </head>
 

@@ -12,9 +12,9 @@
                 	<ul>
                     <% for(var i=0;i<contain1.length;i++){ %> 
                     	<% var list=contain1[i] %>
-                    	<li <%if(select==i){%>class="on"<%}%>><input name="select" type="radio" value="<%= i%>" <% if(i==select){ %>checked="checked" <%}%> onclick="contain.setSelect(<%= i%>)" /><b><%= list.name %></b>  <%= list.province[0] %><%= list.province[1] %><%= list.province[2] %> <%= list.address %> <%= list.phone %>  <label>编辑</label><label>删除</label></li>
+                    	<li <%if(select==i){%>class="on"<%}%>><input name="select" type="radio" value="<%= i%>" <% if(i==select){ %>checked="checked" <%}%> onclick="setData('select',<%= i%>)" /><b><%= list.name %></b>  <%= list.province[0] %><%= list.province[1] %><%= list.province[2] %> <%= list.address %> <%= list.phone %>  <label>编辑</label><label>删除</label></li>
                      <% } %>
-                     <li><input name="select" type="radio" value="new" <% if(select==-1){ %>checked="checked" <%}%>onclick="contain.setSelect(-1)" />使用新地址</li>
+                     <li><input name="select" type="radio" value="new" <% if(select==-1){ %>checked="checked" <%}%>onclick="setData('select',-1)" />使用新地址</li>
                     </ul>
                 </div>
                 <% } %>

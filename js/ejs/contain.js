@@ -1,52 +1,62 @@
 define(function(require,exports,module){
-	
+
 	contain={
 		html:"",
-		//模板
-		tpl:null,
-		setTpl:function(tpl){
-			this.tpl=tpl
-		},
-		//数据
-		data:{
-			state:"编辑",
-			//选择编辑
-			select:0
-		},
-		setContain1Data:function(data){
-			this.data["contain1"]=data
-			
-		},
-	
-		setSelect:function(id){
-			this.data.select=id
-			this.render()
-		},
+        //获取模板
+        tpl:null,
+        init:function(){
+            this.getTpl()
+            this.getData()
+        },
+        getTpl:function(){
+            var _this=this;
+            $.get("js/ejs/contain.html",function(tpl){
+                _this.tpl=tpl
+                _this.render()
+            })
+        },
+        //获取数据
+        data:null,
+        getData:function(){
+            if(this.data){
+                return this.data
+            }
+            var _this=this;
+            $.get("js/ejs/contain.data",function(data){
+                _this.data=JSON.parse(data)
+                _this.render()
+            })
+        },
 		//渲染
 		render:function(){
-			this.html = ejs.render(this.tpl,this.data);
-			$("#contain").html(this.html);
-		}
+            if(this.tpl&&this.data){
+                $("#contain").html(ejs.render(this.tpl,this.data));
+            }
+		},
+        //页面接口函数
+        setData:function(name,value){
+
+            var arr=name.split(",")
+            console.log(this.data)
+            if(arr.length==1){
+                this.data[arr[0]]=value
+            }
+            if(arr.length==2){
+                this.data[arr[0]][arr[1]]=value
+            }
+            if(arr.length==3){
+                this.data[arr[0]][arr[1]][arr[2]]=value
+            }
+            this.render()
+        },
+        //提交
+        commit:function(){
+            $.post("post.php",this.data)
+        }
 	}
-	//获取模板
-	var i=0
-	i++
-	$.get("js/ejs/contain.html",function(tpl){
-		contain.setTpl(tpl)
-		i--
-		if(i==0){
-			contain.render()
-		}
-	})
-	
-	//获取数据
-	i++
-	$.get("js/ejs/contain1.txt",function(data){
-		contain.setContain1Data(eval(data))
-		i--
-		if(i==0){
-			contain.render()
-		}
-	})
+    contain.init()
+    setData=function(name,value){
+        contain.setData(name,value)
+    }
 	module.exports=contain
 })

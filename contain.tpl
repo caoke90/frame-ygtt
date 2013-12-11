@@ -1,11 +1,11 @@
-<link href="css/gwlc2.css" rel="stylesheet" type="text/css" />
+	<link href="css/gwlc2.css" rel="stylesheet" type="text/css" />
 		<div class="contain">
         	<div class="contain1">
-            <% if(state=="选择"&&state=="编辑"){ %>
+            <% if(state1!="关闭"){ %>
             <div class="edit">
             	<div class="title">
                 	<div class="titletext">收货人信息</div>
-                    <div class="titlemore"><label>[关闭]</label></div>
+                    <div class="titlemore"><label onclick="setData('state1','关闭')">[关闭]</label></div>
                 </div>
                 <% if(contain1.length>0){ %>
                 <div class="list">
@@ -13,14 +13,14 @@
                 	<ul>
                     <% for(var i=0;i<contain1.length;i++){ %> 
                     	<% var list=contain1[i] %>
-                    	<li <%if(select==i){%>class="on"<%}%>><input name="select" type="radio" value="<%= i%>" <% if(i==select){ %>checked="checked" <%}%> onclick="setData('select',<%= i%>)" /><b><%= list.name %></b>  <%= list.province[0] %><%= list.province[1] %><%= list.province[2] %> <%= list.address %> <%= list.phone %>  <label>编辑</label><label>删除</label></li>
+                    	<li <%if(select1==i){%>class="on"<%}%>><input name="select1" type="radio" value="<%= i%>" <% if(i==select1){ %>checked="checked" <%}%> onclick="setData('select1',<%= i%>)" /><b><%= list.name %></b>  <%= list.province[0] %><%= list.province[1] %><%= list.province[2] %> <%= list.address %> <%= list.phone %>  <label onclick="setData('select1',<%= i%>);setData('state1','编辑')">编辑</label><label>删除</label></li>
                      <% } %>
-                     <li><input name="select" type="radio" value="new" <% if(select==-1){ %>checked="checked" <%}%>onclick="setData('select',-1)" />使用新地址</li>
+                     <li><input name="select1" type="radio" value="new" <% if(select1==-1){ %>checked="checked" <%}%>onclick="setData('select1',-1)" />使用新地址</li>
                     </ul>
                 </div>
                 <% } %>
-                <% if(state=="编辑"){ %>
-                <% var list=contain1[select] %>
+                <% if(state1=="编辑"){ %>
+                <% var list=contain1[select1] %>
                 <div class="module">
                 	<div><span>收货人信息：</spam><input type="text" value="<%= list.name %>" /></div>
                     <div><span>省份：</span><select name="">
@@ -39,7 +39,7 @@
                     <div><label>[添加到常用地址]</label></div>
                 </div>
                 <%}%>
-                <% if(select==-1){ %>
+                <% if(select1==-1){ %>
                 	<div class="module">
                 	<div><span>收货人信息：</spam><input type="text" value="" /></div>
                     <div><span>省份：</span><select name="">
@@ -62,11 +62,12 @@
                 	<input type="button" value="" />
                 </div>
             </div>
-            <% }else{ %>
+            <% } %>
+            <% if(state1=="关闭"){ %>
             <div class="show">
             	<div class="title">
                 	<div class="titletext">收货人信息</div>
-                    <div class="titlemore"><label>[修改]</label></div>
+                    <div class="titlemore"><label onclick="setData('state1','修改')">[修改]</label></div>
                 </div>
                 <div class="module">
                 	<div>曹科   15101175662 914890674@qq.com </div>

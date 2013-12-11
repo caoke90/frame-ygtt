@@ -10,17 +10,64 @@
     <script src="js/bootconfig.js"></script>
 	<script>
 		seajs.config({
-		  preload: ['seajs/plugin-text',"com/jquery","com/json2","com/ejs"]
+		  preload: ["com/jquery","com/json2"]
 		});
-		seajs.use("ejs/contain",function(contain){
-            $.get("contain.tpl",function(tpl){
-                contain.tpl=tpl
-                contain.render()
-            })
-            $.get("js/ejs/contain.data",function(data){
-                contain.data=JSON.parse(data)
-                contain.render()
-            })
+		seajs.use("com/ejs",function(){
+           contain={
+				init:function(){
+					this.getAreas()
+					this.getTpl()
+					this.getData()
+				},
+				//省份
+				areas:null,
+				getAreas:function(){
+					var _this=this;
+					$.get("js/ejs/areas.json",function(areas){
+						_this.areas=areas
+						_this.render()
+					})
+				},
+				//获取模板
+				tpl:null,
+				getTpl:function(){
+					var _this=this;
+					$.get("contain.tpl",function(tpl){
+						_this.tpl=tpl
+						_this.render()
+					})
+				},
+				//获取数据
+				data:null,
+				getData:function(){
+					var _this=this;
+					$.get("js/ejs/contain.data",function(data){
+						_this.data=JSON.parse(data)
+						_this.render()
+					})
+				},
+				//渲染
+				render:function(){
+					if(this.tpl&&this.data&&this.areas){
+						$("#contain").html(ejs.render(this.tpl,this.data));
+					}
+				},
+				//页面接口函数
+				setData:function(name,value){
+					var arr=name.split(",")
+					if(arr.length==1){
+						this.data[arr[0]]=value
+					}
+					if(arr.length==2){
+						this.data[arr[0]][arr[1]]=value
+					}
+					if(arr.length==3){
+						this.data[arr[0]][arr[1]][arr[2]]=value
+					}
+					this.render()
+				}
+			}
+			contain.init()
             //改变数据
             setData=function(name,value){
                 contain.setData(name,value)

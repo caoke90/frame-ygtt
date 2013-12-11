@@ -15,6 +15,7 @@
 .contain{
 	margin:0 auto;
 	width:1185px;
+	margin-bottom:20px;
 	border:3px solid #aacded;
 	border-top:0;
 }
@@ -45,8 +46,9 @@
 .contain1 .edit .list .h2{ padding-left:10px; line-height:26px; color:#87b4c9; font-weight:bold;}
 .contain1 .edit .list ul{ }
 .contain1 .edit .list li{padding-left:20px; color:#87b4c9; line-height:22px;}
+.contain1 .edit .list li:hover label{ display:inline;}
 .contain1 .edit .list li.on{ background:#eff5f8;}
-.contain1 .edit .list li label{ margin-left:10px;}
+.contain1 .edit .list li label{ margin-left:10px; display:none;}
 .contain1 .edit .list li input{ margin-right:10px;}
 .contain1 .edit .module{ padding-left:50px;}
 .contain1 .show .module{ padding-left:50px; line-height:20px; margin-bottom:10px;}

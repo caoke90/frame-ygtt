@@ -1,4 +1,5 @@
-$(function(){
+define(function(require,exports,module){
+
 if($(".top4").length>1){
 	var b;
 	$(".navbox li").each(function(index){

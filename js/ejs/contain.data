@@ -1,6 +1,6 @@
 
 {
-    "state1":"修改",
+    "state1":"新建",
     "select1":0,
     "contain1":[{
 		"name":["宋小英"],
@@ -19,6 +19,11 @@
 		"email":"",
 		"code":""
 	}],
+	"newarea":{
+		"province":{"name":"北京市", "code":"110000"},
+		"city":{"name":"安庆市", "code":"340800"},
+		"district":{"name":"埇桥区", "code":"341302"}
+	},
     "state2":"关闭",
     "select2":0,
 	"contain2":[{

@@ -16,14 +16,17 @@
            contain={
 				init:function(){
 					this.getAreas()
-					this.getTpl()
 					this.getData()
+					this.getTpl()
+				
 				},
 				//省份
 				areas:null,
 				getAreas:function(){
 					var _this=this;
 					$.get("js/ejs/areas.json",function(areas){
+						
+						_this.data=$.extend(_this.data,{areas:areas})
 						_this.areas=areas
 						_this.render()
 					})
@@ -42,7 +45,7 @@
 				getData:function(){
 					var _this=this;
 					$.get("js/ejs/contain.data",function(data){
-						_this.data=JSON.parse(data)
+						_this.data=$.extend(_this.data,JSON.parse(data))
 						_this.render()
 					})
 				},
@@ -50,6 +53,7 @@
 				render:function(){
 					if(this.tpl&&this.data&&this.areas){
 						$("#contain").html(ejs.render(this.tpl,this.data));
+						
 					}
 				},
 				//页面接口函数
@@ -68,14 +72,8 @@
 				}
 			}
 			contain.init()
-            //改变数据
-            setData=function(name,value){
-                contain.setData(name,value)
-            }
-            //提交
-            commit=function(){
-                $.post("post.php",contain.data)
-            }
+
+            
         })
 	</script>
 </head>
@@ -190,8 +188,8 @@
                 <div class="module">
                 	<div><span>收货人信息：</spam><input type="text" value="宋小英" /></div>
                     <div><span>省份：</span><select name="">
-                      <option value="1">北京</option>
-                  </select><select name="">
+                      <option value="1" selected="selected">北京</option>
+                </select><select name="">
                       <option value="1">朝阳区</option>
                   </select><select name="">
                       <option value="1">四环至五环之间</option>

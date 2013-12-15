@@ -1,25 +1,54 @@
-	<link href="css/gwlc2.css" rel="stylesheet" type="text/css" />
+<link href="css/gwlc2.css" rel="stylesheet" type="text/css" />
 		<div class="contain">
         	<div class="contain1">
             <% if(state1!="关闭"){ %>
             <div class="edit">
             	<div class="title">
                 	<div class="titletext">收货人信息</div>
-                    <div class="titlemore"><label onclick="setData('state1','关闭')">[关闭]</label></div>
+                    <div class="titlemore"><label>[关闭]</label></div>
                 </div>
-                <% if(contain1.length>0){ %>
+                
                 <div class="list">
                 	<div class="h2">常用地址</div>
                 	<ul>
+                    <% if(contain1.length>0){ %>
                     <% for(var i=0;i<contain1.length;i++){ %> 
                     	<% var list=contain1[i] %>
-                    	<li <%if(select1==i){%>class="on"<%}%>><input name="select1" type="radio" value="<%= i%>" <% if(i==select1){ %>checked="checked" <%}%> onclick="setData('select1',<%= i%>)" /><b><%= list.name %></b>  <%= list.province[0] %><%= list.province[1] %><%= list.province[2] %> <%= list.address %> <%= list.phone %>  <label onclick="setData('select1',<%= i%>);setData('state1','编辑')">编辑</label><label>删除</label></li>
+                    	<li <%if(select1==i){%>class="on"<%}%>><input name="select1" type="radio" value="<%= i%>" <% if(i==select1){ %>checked="checked" <%}%> /><b><%= list.name %></b>  <%= list.province[0] %><%= list.province[1] %><%= list.province[2] %> <%= list.address %> <%= list.phone %>  <label>编辑</label><label>删除</label></li>
                      <% } %>
-                     <li><input name="select1" type="radio" value="new" <% if(select1==-1){ %>checked="checked" <%}%>onclick="setData('select1',-1)" />使用新地址</li>
+                     <% } %>
+                     <li><input name="select1" type="radio" value="new" <% if(contain1.length==0||state1=="新建"){ %>checked="checked" <%}%> />使用新地址</li>
                     </ul>
                 </div>
+                <%if(contain1.length==0||state1=="新建"){%>
+                <div class="module">
+                	<div><span>收货人信息：</spam><input type="text" value="" /></div>
+                    <div><span>省份：</span>
+                    <select name="province">
+						<%for(var i=0;i<areas.province.length;i++){%>
+                        <option <%if(newarea.province.name==areas.province[i].name){%>selected="selected"<%}%> value="<%=areas.province[i].code%>"><%=areas.province[i].name%></option>
+                        <%}%>
+                  	</select>
+                  <select name="city">
+                    	<%for(var i=0;i<areas.city.length;i++){%>
+                        <option <% if(areas.city[i].name==newarea.city.name){ %>selected="selected"<%}%> value="<%=areas.city[i].code%>"><%=areas.city[i].name%></option>
+                        <%}%>
+                  </select>
+                  <select name="district">
+                 		<%for(var i=0;i<areas.district.length;i++){%>
+                        <option <% if(areas.district[i].name==newarea.district.name){ %>selected="selected"<%}%> value="<%=areas.district[i].code%>"><%=areas.district[i].name%></option>
+                        <%}%>
+                  </select>
+                  <span>注:</span>
+                  </div>
+                    <div><span>地址：</span><input type="text" value="" /></div>
+                    <div><span>手机号码：</span><input type="text" value="" />或者 <span>固定电话：</span><input type="text" value="" />用于接受</div>
+                    <div><span>电子邮件：</span><input type="text" value="" />用于接</div>
+                    <div><span>邮政编码：</span><input type="text" value="" />用于接</div>
+                    <div><label>[添加到常用地址]</label></div>
+                </div>
                 <% } %>
-                <% if(state1=="编辑"){ %>
+                <%if(contain1.length>0&&state1=="编辑"){%>
                 <% var list=contain1[select1] %>
                 <div class="module">
                 	<div><span>收货人信息：</spam><input type="text" value="<%= list.name %>" /></div>
@@ -39,25 +68,7 @@
                     <div><label>[添加到常用地址]</label></div>
                 </div>
                 <%}%>
-                <% if(select1==-1){ %>
-                	<div class="module">
-                	<div><span>收货人信息：</spam><input type="text" value="" /></div>
-                    <div><span>省份：</span><select name="">
-                      <option value="1"></option>
-                  </select><select name="">
-                      <option value="1"></option>
-                  </select><select name="">
-                      <option value="1"></option>
-                  </select>
-                  <span>注:</span>
-                  </div>
-                    <div><span>地址：</span><input type="text" value="" /></div>
-                    <div><span>手机号码：</span><input type="text" value="" />或者 <span>固定电话：</span><input type="text" value="" />用于接受</div>
-                    <div><span>电子邮件：</span><input type="text" value="" />用于接</div>
-                    <div><span>邮政编码：</span><input type="text" value="" />用于接</div>
-                    <div><label>[添加到常用地址]</label></div>
-                </div>
-                <% } %>
+               
                 <div class="btn">
                 	<input type="button" value="" />
                 </div>
@@ -67,7 +78,7 @@
             <div class="show">
             	<div class="title">
                 	<div class="titletext">收货人信息</div>
-                    <div class="titlemore"><label onclick="setData('state1','修改')">[修改]</label></div>
+                    <div class="titlemore"><label>[修改]</label></div>
                 </div>
                 <div class="module">
                 	<div>曹科   15101175662 914890674@qq.com </div>
@@ -244,3 +255,48 @@
     </div>
         </div>
             	
+<script>
+	//关闭
+	$(".contain1 .edit .titlemore label").click(function(){
+		contain.data.state1="关闭"
+		contain.render()
+	})
+	//修改
+	$(".contain1 .show .titlemore label").click(function(){
+		contain.data.state1="修改"
+		contain.render()
+	})
+	//选择
+	$(".contain1 .edit .list li input").click(function(){
+		contain.data.state1="修改"
+		contain.data.select1=$(this).attr("value")
+		contain.render()
+	})
+	//编辑
+	$(".contain1 .edit .list li label").click(function(){
+		if($(this).text()=="编辑"){
+			contain.data.state1=$(this).text()
+			contain.data.select1=$(this).siblings(":radio").attr("value")
+			contain.render()
+		}
+		if($(this).text()=="删除"){
+			contain.data.state1=$(this).text()
+			contain.data.select1=$(this).siblings(":radio").attr("value")
+			contain.data.contain1.splice(contain.data.select1,1)
+			contain.render()
+		}
+	})
+
+	//新建
+	$(".contain1 .edit .list li input").last().focus(function(){
+		if(contain.data.state1!="新建"){
+			contain.data.state1="新建"
+			contain.render()
+		}
+	})
+	//省份
+	if(contain.data.state1!="关闭"){
+		
+	}
+	
+</script>

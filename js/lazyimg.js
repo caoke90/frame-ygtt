@@ -26,18 +26,7 @@ $("#keyword").each(function () {
     })
 })
 
-//小字体价格
-$(".btn b").css({ "font-size": "14px" })
-$(".btn b").each(function (i) {
-    var t = $(this).text();
-    var arr = t.split(".");
-    arr[0] = arr[0].replace(",", "")
-    var sux = "00";
-    if (arr.length > 1) {
-        sux = arr[1];
-    }
-    $(this).html(arr[0] + ".<font style='font-size:12px;'>" + sux + "</font>")
-})
+
 
 $(".price b").each(function (i) {
     var t = $(this).text();

@@ -24,21 +24,14 @@
                 <div class="module">
                 	<div><span>收货人信息：</spam><input type="text" value="" /></div>
                     <div><span>省份：</span>
+                    <span id="loc">
                     <select name="province">
-						<%for(var i=0;i<areas.province.length;i++){%>
-                        <option <%if(newarea.province.name==areas.province[i].name){%>selected="selected"<%}%> value="<%=areas.province[i].code%>"><%=areas.province[i].name%></option>
-                        <%}%>
                   	</select>
                   <select name="city">
-                    	<%for(var i=0;i<areas.city.length;i++){%>
-                        <option <% if(areas.city[i].name==newarea.city.name){ %>selected="selected"<%}%> value="<%=areas.city[i].code%>"><%=areas.city[i].name%></option>
-                        <%}%>
                   </select>
                   <select name="district">
-                 		<%for(var i=0;i<areas.district.length;i++){%>
-                        <option <% if(areas.district[i].name==newarea.district.name){ %>selected="selected"<%}%> value="<%=areas.district[i].code%>"><%=areas.district[i].name%></option>
-                        <%}%>
                   </select>
+                  </span>
                   <span>注:</span>
                   </div>
                     <div><span>地址：</span><input type="text" value="" /></div>
@@ -52,13 +45,15 @@
                 <% var list=contain1[select1] %>
                 <div class="module">
                 	<div><span>收货人信息：</spam><input type="text" value="<%= list.name %>" /></div>
-                    <div><span>省份：</span><select name="">
-                      <option value="1"><%= list.province[0] %></option>
-                  </select><select name="">
-                      <option value="1"><%= list.province[1] %></option>
-                  </select><select name="">
-                      <option value="1"><%= list.province[2] %></option>
+                    <div><span>省份：</span>
+                    <span id="loc">
+                    <select name="province">
+                  	</select>
+                  <select name="city">
                   </select>
+                  <select name="district">
+                  </select>
+                  </span>
                   <span>注:</span>
                   </div>
                     <div><span>地址：</span><input type="text" value="<%= list.address %>" /></div>
@@ -256,6 +251,9 @@
         </div>
             	
 <script>
+	
+	$("#loc").LocationSelect({data:"areas.json",labels:["北京市","市辖区","昌平区"]});
+	
 	//关闭
 	$(".contain1 .edit .titlemore label").click(function(){
 		contain.data.state1="关闭"

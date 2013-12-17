@@ -16,7 +16,7 @@
 					_cCode : "",
 					opts : options
 				};
-				specs.holder.append('<select name="province"><option value="0">请选择一个省或直辖市</option></select><select name="city"><option value="0">请选择一个市</option></select><select name="district"><option value="0">请选择一个地区</option></select>');
+				//specs.holder.append('<select name="province"><option value="0">请选择一个省或直辖市</option></select><select name="city"><option value="0">请选择一个市</option></select><select name="district"><option value="0">请选择一个地区</option></select>');
 				try{
 					$.LocationSelect.init(specs);
 				} catch(e) {

@@ -10,7 +10,7 @@
         <script type="text/javascript">
             
 			$(function() {
-				$("#loc").LocationSelect({labels:["北京市","市辖区","昌平区"]});
+				$("#loc").LocationSelect({data:"areas.json",labels:["北京市","市辖区","昌平区"]});
 			});
             
         </script>
@@ -21,7 +21,11 @@
     	<p>
     	<a href="http://pagetalks.com/2010/03/22/jquery-locationselect-plugin.html">back to documentation page</a></p>
     	
-    	<div id="loc" ></div>
+    	<div id="loc" >
+        <select name="province"></select>
+        <select name="city"></select>
+        <select name="district"></select>
+        </div>
     	<a id="foo" href="#">Tell me the address!</a>
     	
     </body>

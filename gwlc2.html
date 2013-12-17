@@ -10,26 +10,13 @@
     <script src="js/bootconfig.js"></script>
 	<script>
 		seajs.config({
-		  preload: ["com/jquery","com/json2"]
+		  preload: ["com/jquery","com/json2","com/ejs"]
 		});
-		seajs.use("com/ejs",function(){
+		seajs.use("ejs/location",function(){
            contain={
 				init:function(){
-					this.getAreas()
 					this.getData()
 					this.getTpl()
-				
-				},
-				//省份
-				areas:null,
-				getAreas:function(){
-					var _this=this;
-					$.get("js/ejs/areas.json",function(areas){
-						
-						_this.data=$.extend(_this.data,{areas:areas})
-						_this.areas=areas
-						_this.render()
-					})
 				},
 				//获取模板
 				tpl:null,
@@ -44,31 +31,16 @@
 				data:null,
 				getData:function(){
 					var _this=this;
-					$.get("js/ejs/contain.data",function(data){
+					$.get("contain.data",function(data){
 						_this.data=$.extend(_this.data,JSON.parse(data))
 						_this.render()
 					})
 				},
 				//渲染
 				render:function(){
-					if(this.tpl&&this.data&&this.areas){
+					if(this.tpl&&this.data){
 						$("#contain").html(ejs.render(this.tpl,this.data));
-						
 					}
-				},
-				//页面接口函数
-				setData:function(name,value){
-					var arr=name.split(",")
-					if(arr.length==1){
-						this.data[arr[0]]=value
-					}
-					if(arr.length==2){
-						this.data[arr[0]][arr[1]]=value
-					}
-					if(arr.length==3){
-						this.data[arr[0]][arr[1]][arr[2]]=value
-					}
-					this.render()
 				}
 			}
 			contain.init()
@@ -187,13 +159,14 @@
                 </div>
                 <div class="module">
                 	<div><span>收货人信息：</spam><input type="text" value="宋小英" /></div>
-                    <div><span>省份：</span><select name="">
+                    <div><span>省份：</span><span id="loc"><select name="">
                       <option value="1" selected="selected">北京</option>
                 </select><select name="">
                       <option value="1">朝阳区</option>
                   </select><select name="">
                       <option value="1">四环至五环之间</option>
                   </select>
+                  </span>
                   <span>注:</span>
                   </div>
                     <div><span>地址：</span>北京朝阳区四环至五环之间<input type="text" value="宋小英" /></div>
